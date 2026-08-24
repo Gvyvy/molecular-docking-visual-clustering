@@ -57,16 +57,19 @@ This project was one of my first experiences using programming and data analysis
 
 ---
 
-## Results & Research Contribution
+# Key Results
 
-The project resulted in a visual clustering approach designed to support the exploration of molecular docking results.
+The approach was evaluated using 40 molecular docking result files from AutoDock and Vina.
 
-It also contributed to research presented in:
+The main results showed that:
 
-### Visual Clustering Approach for Docking Results from Vina and AutoDock
+- **PyDRA could process multiple docking result files**, supporting both AutoDock (`.dlg`) and Vina (`.pdbqt`) formats.
+- The **treemap visualization** made it easier to identify clusters with higher protein-binding affinity through a color scale and to recognize clusters containing more conformations.
+- The **dendrogram visualization** provided a more detailed view of hierarchical clustering, allowing individual conformations and the structure of each cluster to be explored.
+- Compared with the traditional AutoDock Tools visualization, the proposed approach reduced visualization difficulties caused by overlapping cluster representations.
+- Connecting both visualizations directly with **PyMOL** allowed users to select clusters or conformations and inspect the corresponding molecular structures interactively.
 
-[View the publication on ResearchGate](https://www.researchgate.net/publication/318140828_Visual_Clustering_Approach_for_Docking_Results_from_Vina_and_AutoDock)
-
+Together, the two visualization approaches provided complementary ways to analyze docking results: the treemap supported quick identification of affinity patterns, while the dendrogram provided more detailed analysis of cluster composition.
 ---
 
 ## Why This Project Matters
